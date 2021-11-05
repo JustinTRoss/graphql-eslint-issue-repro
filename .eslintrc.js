@@ -7,11 +7,7 @@ module.exports = {
     },
     {
       files: ["*.graphql"],
-      parser: "@graphql-eslint/eslint-plugin",
-      plugins: ["@graphql-eslint"],
-      rules: {
-        // ...
-      },
+      extends: "plugin:@graphql-eslint/all",
     },
   ],
 };
