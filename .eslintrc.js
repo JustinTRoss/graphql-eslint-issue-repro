@@ -1,5 +1,8 @@
 module.exports = {
-  ignorePatterns: [".yarn/**", "dist/**/*.js", "/**/*.d.ts", "**/*.spec.ts"],
+  parserOptions: {
+    sourceType: "module",
+    ecmaVersion: 2015,
+  },
   overrides: [
     {
       files: ["*.ts", "*.js"],
@@ -7,7 +10,15 @@ module.exports = {
     },
     {
       files: ["*.graphql"],
-      extends: "plugin:@graphql-eslint/all",
+      parser: "@graphql-eslint/eslint-plugin",
+      plugins: ["@graphql-eslint"],
+      // extends: "plugin:@graphql-eslint/schema-recommended",
+      parserOptions: {
+        schema: ["./src/index.ts", "./src/modules/**/Schema/**/*.ts"],
+      },
+      rules: {
+        "@graphql-eslint/possible-type-extension": ["error"],
+      },
     },
   ],
 };

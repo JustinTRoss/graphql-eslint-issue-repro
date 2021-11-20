@@ -210,21 +210,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-eslint/eslint-plugin@npm:^2.4.1-alpha-7542cbd.0":
-  version: 2.4.1-alpha-7542cbd.0
-  resolution: "@graphql-eslint/eslint-plugin@npm:2.4.1-alpha-7542cbd.0"
+"@graphql-eslint/eslint-plugin@npm:2.5":
+  version: 2.5.0
+  resolution: "@graphql-eslint/eslint-plugin@npm:2.5.0"
   dependencies:
     "@babel/code-frame": 7.16.0
-    "@graphql-tools/code-file-loader": ^7.0.2
-    "@graphql-tools/graphql-tag-pluck": ^7.0.2
-    "@graphql-tools/import": ^6.3.1
-    "@graphql-tools/utils": ^8.0.2
-    graphql-config: ^4.0.1
+    "@graphql-tools/code-file-loader": 7.2.2
+    "@graphql-tools/graphql-tag-pluck": 7.1.3
+    "@graphql-tools/import": 6.6.1
+    "@graphql-tools/utils": 8.5.3
+    graphql-config: 4.1.0
     graphql-depth-limit: 1.1.0
-    lodash.lowercase: ^4.3.0
+    lodash.lowercase: 4.3.0
   peerDependencies:
-    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
-  checksum: aead57001e0e65ca128328c64eb03e75d63b1aac9bbbd9c57806b7c6f6018a8209317615a4812ab35e910235aa6afa72f8b70010ce953480184497b6b3208fda
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: 581a444bb5192f81daf9c73768f9688af110bf6137c3d9f4a8e775c00167d3b9b7c100d23457495398ff1d5cc1eec470792f422ac5edd022d7f8ea333540c11e
   languageName: node
   linkType: hard
 
@@ -242,7 +242,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/code-file-loader@npm:^7.0.2":
+"@graphql-tools/code-file-loader@npm:7.2.2":
   version: 7.2.2
   resolution: "@graphql-tools/code-file-loader@npm:7.2.2"
   dependencies:
@@ -288,7 +288,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/graphql-tag-pluck@npm:^7.0.2, @graphql-tools/graphql-tag-pluck@npm:^7.1.3":
+"@graphql-tools/graphql-tag-pluck@npm:7.1.3, @graphql-tools/graphql-tag-pluck@npm:^7.1.3":
   version: 7.1.3
   resolution: "@graphql-tools/graphql-tag-pluck@npm:7.1.3"
   dependencies:
@@ -303,7 +303,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/import@npm:^6.3.1, @graphql-tools/import@npm:^6.5.7":
+"@graphql-tools/import@npm:6.6.1":
+  version: 6.6.1
+  resolution: "@graphql-tools/import@npm:6.6.1"
+  dependencies:
+    "@graphql-tools/utils": 8.5.3
+    resolve-from: 5.0.0
+    tslib: ~2.3.0
+  peerDependencies:
+    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: 392ce25c15875e94883ac092300ca1d1cac8d6f78e0cf0050632c3d672cc454a0fbda86a465d23ead512218ebf28d331fd3d6c68d41b524310277a8e5fa8b53b
+  languageName: node
+  linkType: hard
+
+"@graphql-tools/import@npm:^6.5.7":
   version: 6.5.8
   resolution: "@graphql-tools/import@npm:6.5.8"
   dependencies:
@@ -399,7 +412,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-tools/utils@npm:8.5.2, @graphql-tools/utils@npm:^8.0.2, @graphql-tools/utils@npm:^8.5.1":
+"@graphql-tools/utils@npm:8.5.2, @graphql-tools/utils@npm:^8.5.1":
   version: 8.5.2
   resolution: "@graphql-tools/utils@npm:8.5.2"
   dependencies:
@@ -407,6 +420,17 @@ __metadata:
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
   checksum: 62501747aa2c83ce5eb41552fe98092eb96433076d693218531de23ea26d25299bdd440340245bd01a7fd520b3e17d58c2b16d045596dd8b0d6d2c9577cf6a65
+  languageName: node
+  linkType: hard
+
+"@graphql-tools/utils@npm:8.5.3":
+  version: 8.5.3
+  resolution: "@graphql-tools/utils@npm:8.5.3"
+  dependencies:
+    tslib: ~2.3.0
+  peerDependencies:
+    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: f5f8e82c46f205c0d48c2d6d160e28183706a86755e7ea31db6e54b32da7db9eecf988d0935538e27cc3706b5031b75798dc85532e11724fdb4578a9a1b00450
   languageName: node
   linkType: hard
 
@@ -1693,7 +1717,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-config@npm:^4.0.1":
+"graphql-config@npm:4.1.0":
   version: 4.1.0
   resolution: "graphql-config@npm:4.1.0"
   dependencies:
@@ -1729,10 +1753,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "graphql-eslint-issue-repro@workspace:."
   dependencies:
-    "@graphql-eslint/eslint-plugin": ^2.4.1-alpha-7542cbd.0
+    "@graphql-eslint/eslint-plugin": 2.5
     "@yarnpkg/pnpify": ^3.0.1-rc.2
     eslint: ^7.32.0
     graphql: ^16.0.1
+    graphql-tag: ^2.12.6
+    typescript: ^4.4.4
   languageName: unknown
   linkType: soft
 
@@ -1742,6 +1768,17 @@ __metadata:
   peerDependencies:
     graphql: ">=0.11 <=16"
   checksum: 897b875a700858696034d995c0e973d0df64c3f9eeb94143d3e007da351cba1fb7dd57cb475891983803e747aa260acc3f567f5c456bdac2efe22ca11d73e72f
+  languageName: node
+  linkType: hard
+
+"graphql-tag@npm:^2.12.6":
+  version: 2.12.6
+  resolution: "graphql-tag@npm:2.12.6"
+  dependencies:
+    tslib: ^2.1.0
+  peerDependencies:
+    graphql: ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: b15162a3d62f17b9b79302445b9ee330e041582f1c7faca74b9dec5daa74272c906ec1c34e1c50592bb6215e5c3eba80a309103f6ba9e4c1cddc350c46f010df
   languageName: node
   linkType: hard
 
@@ -2046,7 +2083,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.lowercase@npm:^4.3.0":
+"lodash.lowercase@npm:4.3.0":
   version: 4.3.0
   resolution: "lodash.lowercase@npm:4.3.0"
   checksum: 463d7e50db29aea736563352f05adcff1f7c60574fe201f47ad98d2834f3dc64bee84a31702e1661d0f94913e89a46ded04befd425bbd3b95d23697689118f98
@@ -2892,7 +2929,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2, tslib@npm:~2.3.0":
+"tslib@npm:^2, tslib@npm:^2.1.0, tslib@npm:~2.3.0":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
@@ -2926,6 +2963,26 @@ __metadata:
   version: 0.20.2
   resolution: "type-fest@npm:0.20.2"
   checksum: 4fb3272df21ad1c552486f8a2f8e115c09a521ad7a8db3d56d53718d0c907b62c6e9141ba5f584af3f6830d0872c521357e512381f24f7c44acae583ad517d73
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.4.4":
+  version: 4.4.4
+  resolution: "typescript@npm:4.4.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 89ecb8436bb48ef5594d49289f5f89103071716b6e4844278f4fb3362856e31203e187a9c76d205c3f0b674d221a058fd28310dbcbcf5d95e9a57229bb5203f1
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.4.4#~builtin<compat/typescript>":
+  version: 4.4.4
+  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: bd629ad0da4a15d79aaad56baf3ee7d96f6a181760d430ae77f8c5325df7bffd9edee57544a3970e3651e8b796fe03a5838a7eb39c6d46cc3866c0b23d36a0dd
   languageName: node
   linkType: hard
 
