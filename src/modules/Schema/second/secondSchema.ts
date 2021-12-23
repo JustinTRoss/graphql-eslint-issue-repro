@@ -4,7 +4,11 @@ export default gql`
   type Book {
     id: ID
     title: String
-    author: Boolean
+    author: String
+  }
+
+  extend type Genre {
+    SCIFI
   }
 
   extend type Query {

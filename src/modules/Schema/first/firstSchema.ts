@@ -1,13 +1,18 @@
 import { gql } from "graphql-tag";
 
 export default gql`
-  type NOT_A_Book {
+  type Book {
     id: ID
     title: String
-    author: Boolean
+    author: String
+  }
+
+  enum Genre {
+    FICTION
+    NONFICTION
   }
 
   extend type Query {
-    NotBook: [NOT_A_Book]
+    NotBook: [Book]
   }
 `;
