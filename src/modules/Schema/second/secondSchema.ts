@@ -1,15 +1,19 @@
 import { gql } from "graphql-tag";
 
 export default gql`
-  type Book {
-    id: ID
-    title: String
-    author: String
+  # type Book {
+  #   id: ID
+  #   title: String
+  #   author: String
+  # }
+
+  extend type Book {
+    spine: Boolean
   }
 
-  extend type Genre {
-    SCIFI
-  }
+  # extend enum Genre {
+  #   SCIFI
+  # }
 
   extend type Query {
     books: [Book]

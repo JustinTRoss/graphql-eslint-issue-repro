@@ -5,6 +5,7 @@ export default gql`
     id: ID
     title: String
     author: String
+    genre: Genre
   }
 
   enum Genre {
