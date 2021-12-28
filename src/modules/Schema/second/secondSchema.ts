@@ -7,7 +7,7 @@ export default gql`
     author: String
   }
 
-  extend type Genre {
+  extend enum Genre {
     SCIFI
   }
 
