@@ -8,7 +8,7 @@
     "lint": "eslint --ext .js,.ts,.graphql ."
   },
   "dependencies": {
-    "@graphql-eslint/eslint-plugin": "3.3.0-alpha-b07557f.0",
+    "@graphql-eslint/eslint-plugin": "3.3.0-alpha-1c01242.0",
     "@yarnpkg/pnpify": "^3.0.1-rc.2",
     "eslint": "^7.32.0",
     "graphql": "^16.0.1",

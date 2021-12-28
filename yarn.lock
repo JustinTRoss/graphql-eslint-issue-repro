@@ -256,9 +256,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-eslint/eslint-plugin@npm:3.3.0-alpha-b07557f.0":
-  version: 3.3.0-alpha-b07557f.0
-  resolution: "@graphql-eslint/eslint-plugin@npm:3.3.0-alpha-b07557f.0"
+"@graphql-eslint/eslint-plugin@npm:3.3.0-alpha-1c01242.0":
+  version: 3.3.0-alpha-1c01242.0
+  resolution: "@graphql-eslint/eslint-plugin@npm:3.3.0-alpha-1c01242.0"
   dependencies:
     "@babel/code-frame": 7.16.0
     "@graphql-tools/code-file-loader": 7.2.3
@@ -269,7 +269,7 @@ __metadata:
     lodash.lowercase: 4.3.0
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: ecfbe323bf8bda5e0273991515fe76f6e5cea72facc55070d7ae6f9e907b44f0d6586f1b06ba5d57de1a02ef98552441433b7194a27bd86378e83e4b3d9f0d75
+  checksum: 956493f3f1ec4e852ff18e75ba9c60df43b2eb482808a378b52750d32c57934f83e85d42aa9f6399b13382735790a6afbbec2f9947883748b40624f968306731
   languageName: node
   linkType: hard
 
@@ -1800,7 +1800,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "graphql-eslint-issue-repro@workspace:."
   dependencies:
-    "@graphql-eslint/eslint-plugin": 3.3.0-alpha-b07557f.0
+    "@graphql-eslint/eslint-plugin": 3.3.0-alpha-1c01242.0
     "@yarnpkg/pnpify": ^3.0.1-rc.2
     eslint: ^7.32.0
     graphql: ^16.0.1
