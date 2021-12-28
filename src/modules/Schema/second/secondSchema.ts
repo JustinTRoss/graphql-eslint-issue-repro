@@ -7,8 +7,6 @@ export default gql`
     author: String
   }
 
-  extend union Product = Genre
-
   extend enum Genre {
     SCIFI
   }

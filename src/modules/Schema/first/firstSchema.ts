@@ -6,15 +6,16 @@ export default gql`
     title: String
     author: String
   }
-  union Product
-  {
-    name: String
-  }
 
   enum Genre {
     FICTION
     NONFICTION
   }
+
+  union Product
+  {
+    name: String
+  } || Book
 
   extend type Query {
     NotBook: [Book]
