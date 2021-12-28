@@ -5,9 +5,11 @@ export default gql`
     id: ID
     title: String
     author: String
+    spine: String
+    spine: Boolean
   }
 
-  extend type Genre {
+  extend enum Genre {
     SCIFI
   }
 
